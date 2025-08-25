@@ -65,7 +65,7 @@ const win = () => {
         comp = "None"
     }
     else if(player === "Paper" && comp === "Rock"){
-        result.innerText = "Player Wins, " + player + " beats " + comp;
+        result.innerText = "You Win, " + player + " beats " + comp;
         result.style.backgroundColor = "rgb(234, 228, 210)"
         result.style.color = "rgb(60, 42, 48)"
         result.style.width = "45rem"
@@ -87,7 +87,7 @@ const win = () => {
         comp = "None"
     }
     else if(player === "Rock" && comp === "Scissor"){
-        result.innerText = "Player Wins, " + player + " beats " + comp;
+        result.innerText = "You Win, " + player + " beats " + comp;
         result.style.backgroundColor = "rgb(234, 228, 210)"
         result.style.color = "rgb(60, 42, 48)"
         result.style.width = "45rem"
@@ -109,7 +109,7 @@ const win = () => {
         comp = "None"
     }
     else if(player === "Scissor" && comp === "Paper"){
-        result.innerText = "Player Wins, " + player + " beats " + comp;
+        result.innerText = "You Win, " + player + " beats " + comp;
         result.style.backgroundColor = "rgb(234, 228, 210)"
         result.style.color = "rgb(60, 42, 48)"
         result.style.width = "45rem"
@@ -134,4 +134,5 @@ const win = () => {
 
 resett.addEventListener("click", () => {
     location.reload();
+
 })
