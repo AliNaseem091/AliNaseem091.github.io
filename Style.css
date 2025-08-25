@@ -111,7 +111,7 @@ img:hover{
 
 /* ===== Mobile (<=600px) ===== */
 @media (max-width: 600px){
-    html{ font-size: 8px; } /* scales everything down */
+    html{ font-size: 8px; } 
     .navbar{ font-size: 3rem; }
     img{ width: 10rem; height: 10rem; }
     .images{
@@ -125,13 +125,16 @@ img:hover{
     }
     .countp, .countc, .draww{ font-size: 4rem; }
     .name{ font-size: 2rem; }
+
     .board, .reset{
+        position: static;       
+        margin-top: 2rem;       
         width: 18rem;
         height: 5rem;
         font-size: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .board{ top: 18rem; }
-    .reset{ top: 25rem; }
 }
+
