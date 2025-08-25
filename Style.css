@@ -1,0 +1,137 @@
+/* ===== Base / Desktop (Laptop) ===== */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family: papyrus;
+}
+body{
+    background-color: rgb(121, 103, 108);
+}
+
+.navbar{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(60, 42, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(234, 228, 210);
+}
+
+img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    box-sizing: border-box;
+}
+img:hover{
+    cursor: pointer;
+    border: 0.5rem solid rgb(60, 42, 48);
+}
+
+.pictures{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.images{
+    display: flex;
+    gap:4rem;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.countp, .countc, .draww{
+    font-size: 7rem;
+}
+.name{
+    font-size: 3rem;
+}
+
+.board{
+    position: absolute;
+    top: 22rem;
+    left: 44%;
+    width: 24rem;
+    height: 7rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(60, 42, 48);
+    color: rgb(234, 228, 210);
+    font-size: 2.7rem;
+}
+.reset{
+    position: absolute;
+    top: 30rem;
+    left: 44%;
+    width: 24rem;
+    height: 7rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(60, 42, 48);
+    color: rgb(234, 228, 210);
+    font-size: 2.7rem; 
+    transition: background-color 0.3s ease-in-out;
+}
+.reset:hover{
+    cursor: pointer;
+    background-color: rgb(77, 64, 63);
+}
+
+/* ===== Tablet (<=1024px) ===== */
+@media (max-width: 1024px){
+    .navbar{ font-size: 4rem; }
+    img{ width: 12rem; height: 12rem; }
+    .images{ gap: 3rem; }
+    .countp, .countc, .draww{ font-size: 5rem; }
+    .name{ font-size: 2.5rem; }
+    .board, .reset{
+        width: 20rem;
+        height: 6rem;
+        font-size: 2.2rem;
+    }
+    .board{ top: 20rem; left: 42%; }
+    .reset{ top: 28rem; left: 42%; }
+}
+
+/* ===== Mobile (<=600px) ===== */
+@media (max-width: 600px){
+    html{ font-size: 8px; } /* scales everything down */
+    .navbar{ font-size: 3rem; }
+    img{ width: 10rem; height: 10rem; }
+    .images{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .score{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .countp, .countc, .draww{ font-size: 4rem; }
+    .name{ font-size: 2rem; }
+    .board, .reset{
+        width: 18rem;
+        height: 5rem;
+        font-size: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .board{ top: 18rem; }
+    .reset{ top: 25rem; }
+}
